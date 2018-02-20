@@ -8,7 +8,7 @@ $(document).ready(function(){
         }
     });
     
-    $('.mobile-nav svg').click(function(){
+    $('.mobile-nav').click(function(){
         $('.navbar ul').toggleClass('active');
     });
 });

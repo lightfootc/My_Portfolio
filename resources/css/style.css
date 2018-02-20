@@ -1,8 +1,9 @@
 /* Universal */
+@import url('https://fonts.googleapis.com/css?family=Megrim|Roboto+Slab');
 html{
     font-size: 16px;
     line-height: 1.4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Navigation Bar */
@@ -16,6 +17,7 @@ header{
     height: 90px;
     width: 100%;
     position: fixed;
+    z-index: 10;
     transition: 0.5s;
 }
 
@@ -49,6 +51,7 @@ header.navBackground .logo img{
     text-decoration: none;
     line-height: 5rem;
     text-transform: uppercase;
+    color: #fff;
     padding: 0.2rem 0.8rem;
 }
 
@@ -89,7 +92,7 @@ header.navBackground .logo img{
         position: absolute;
         top: 73px;
         left: 0;
-    }
+   }
     .navbar ul.active{
         display: block;
     }
@@ -101,11 +104,58 @@ header.navBackground .logo img{
 }
 
 /* Jumbotron Section */
-section.sec1{
+.jumbotron{
     width: 100%;
     height: 100vh;
     background: url(/resources/images/jumbotron_bg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.sec1{
+    width: 100%;
+    height: 200px;
+    background: url(/resources/images/jumbotron_bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}   
+
+.parallax{
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20%;
+    background: url(/resources/images/moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    align-self: center;
+}
+
+.parallax h1,
+.parallax h4{
+    color: white;
+}
+
+.parallax h1{
+    font-size: 2.5rem;
+}
+
+.parallax h4{
+    font-family: 'Megrim', cursive;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.content h1{
+    font-family: 'Megrim', cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 4rem;
 }
