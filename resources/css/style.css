@@ -6,6 +6,11 @@ html{
     font-family: 'Roboto Slab', serif;
 }
 
+body{
+    background-color: #000;
+    color: #fff
+}
+
 /* Navigation Bar */
 .logo img{
     height: 75px;
@@ -22,7 +27,7 @@ header{
 }
 
 header.navBackground{
-    background: linear-gradient(to right, rgba(252, 70, 107, 0.7), rgba(63, 94, 251, 0.7));
+    background: linear-gradient(to right, rgba(121, 224, 255, 0.7), rgba(212, 8, 195, 0.479));
     height: 70px;
     padding: 0.1rem 0.5rem;
 }
@@ -57,7 +62,7 @@ header.navBackground .logo img{
 
 .navbar ul li a.active,
 .navbar ul li a:hover{
-    background: #c672eb;
+    background: #fc05e7;
     color: #fff;
 }
 
@@ -71,7 +76,7 @@ header.navBackground .logo img{
     }
     .mobile-nav{
         display: flex;
-        color: #c672eb;
+        color: #fc05e7;
         padding: 0.2rem 0.8rem;
     }
     .mobile-nav .logo{
@@ -87,7 +92,7 @@ header.navBackground .logo img{
     .navbar ul{
         display: none;
         width: 100%;
-        background: linear-gradient(to right, rgba(252, 219, 70, 0.7), rgba(63, 94, 251, 0.7));
+        background: linear-gradient(to right, rgba(121, 224, 255, 0.7), rgba(212, 8, 195, 0.479));
         text-align: center;
         position: absolute;
         top: 73px;
@@ -107,47 +112,29 @@ header.navBackground .logo img{
 .jumbotron{
     width: 100%;
     height: 100vh;
-    background: url(/resources/images/jumbotron_bg.jpeg);
+    background: url(/resources/images/jumbo-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.sec1{
-    width: 100%;
-    height: 200px;
-    background: url(/resources/images/jumbotron_bottom.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 0;
     display: flex;
-}   
-
-.parallax{
-    width: 70%;
-    height: 400px;
-    margin: 0 auto;
-    padding-top: 20%;
-    background: url(/resources/images/moon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    align-self: center;
+    justify-content: center;
 }
 
-.parallax h1,
-.parallax h4{
+.jumbo-content{
+    position: relative;
+    top: 50%;
+}
+
+.jumbo-content h1,
+.jumbo-content h4{
     color: white;
 }
 
-.parallax h1{
+.jumbo-content h1{
     font-size: 2.5rem;
 }
 
-.parallax h4{
+.jumbo-content h4{
     font-family: 'Megrim', cursive;
     font-size: 1.4rem;
     font-weight: 900;
@@ -155,7 +142,7 @@ header.navBackground .logo img{
 
 .content h1{
     font-family: 'Megrim', cursive;
-    color: #000;
+    color: #c672eb;
     font-weight: bold;
     font-size: 4rem;
 }
