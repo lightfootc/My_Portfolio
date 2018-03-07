@@ -170,8 +170,38 @@ header.navBackground .logo img{
 a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
-a:hover{
+.wrapper a:hover{
     cursor: pointer;
+}
+
+/* Portfolio Section */
+.port{
+    background: url(/resources/images/port-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn{
+    min-height: 3rem;
+    background: transparent;
+    background-color:#c672eb;
+    border: 3px solid #fff;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info{
+    position: relative;
+    top: 50%;
+}
+
+.info h1{
+    margin: 0.5rem;
 }
